@@ -5,12 +5,15 @@ import {
   OrthographicCamera,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Pc from "D:/Git repos/portfolio/public/Pc";
+import Pc from "../components/Pc";
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import { Leva, useControls } from "leva";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
+import Iphone16 from "../components/Iphone16";
+import Iphone13 from "../components/Iphone13";
+import Button from "../components/Button";
 
 function Hero() {
   return (
@@ -27,19 +30,19 @@ function Hero() {
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <OrbitControls></OrbitControls>
-            <ambientLight intensity={1} />
-            <directionalLight position={[-2, 5, 2]} />
+            <ambientLight intensity={3} />
+
             <perspectiveCamera
               makeDefault
-              position={[0, 0, 0]}
+              position={[0, 0, 20]}
             ></perspectiveCamera>
-            <Pc
+            {/* <Pc
               scale={[0.5, 0.5, 0.5]}
               position={[1, -2, 0]}
               style={{
                 transform: `scale(${window.innerWidth < 768 ? 0.3 : 0.5})`,
               }}
-            ></Pc>
+            ></Pc> */}
             <Pc scale={0.5} position={[1, -2, 0]}></Pc>
             <group>
               <Target
@@ -52,9 +55,24 @@ function Hero() {
                 scale={0.08}
                 rotation={[0, -Math.PI / 5, 0]}
               ></ReactLogo>
+              <Iphone16
+                position={[-2.7, 0, 0.6]}
+                rotation={[0, -Math.PI / 2, 0]}
+                scale={0.8}
+              ></Iphone16>
+              <Iphone13 position={[2, -1, 0]}></Iphone13>
             </group>
           </Suspense>
         </Canvas>
+      </div>
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className="w-fit">
+          <Button
+            name="Let's Work Together"
+            isBeam
+            containerClass="sm:w-fit w-full sm:min-w-96"
+          ></Button>
+        </a>
       </div>
     </section>
   );
