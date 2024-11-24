@@ -24,35 +24,35 @@ export const navLinks = [
   export const clientReviews = [
     {
       id: 1,
-      name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
-      img: 'assets/review1.png',
+      name: 'Naruto Uzumaki',
+      position: '7th Hokage',
+      img: 'assets/reviews/naruto.jpg',
       review:
-        'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+        'Divyansh is the best web developer in all the Hidden Leaf! He created a website that is as fast as my Shadow Clone Technique and as strong as my Rasengan. I can trust him with my most important missions and he will always deliver a website that will make my enemies say "dattebayo"!',
     },
     {
       id: 2,
-      name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
-      img: 'assets/review2.png',
+      name: 'Son Goku',
+      position: 'Monkey King',
+      img: 'assets/reviews/goku.jpg',
       review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+        'Divyansh is the strongest web developer in the universe! His skills in frontend and backend development are unmatched, and his ability to solve complex problems is as powerful as my Kamehameha wave. I can trust him with my most important missions and he will always deliver a website that is as fast as my Instant Transmission and as strong as my Dragon Fist. If you need a website that will make your enemies say "Its over 9,000!", then Divyansh is the developer for you!',
     },
     {
       id: 3,
-      name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
-      img: 'assets/review3.png',
+      name: 'Roronoa Zoro',
+      position: 'King of Hell',
+      img: 'assets/reviews/Zoro.jpg',
       review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+        'Divyansh is a web developer that is as sharp as my Three Swords Style. He can create a website that is as fast as my speed and as beautiful as my sword techniques. But be careful, he might get lost in the code like I do in the streets of Water 7. Just remember, if you need a website that will make your enemies say "I will never surrender!", then Divyansh is the developer for you! Just dont ask him for directions, or you will end up lost in the Grand Line.',
     },
     {
       id: 4,
-      name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
-      img: 'assets/review4.png',
+      name: 'Deadpool',
+      position: 'Marvel Jesus',
+      img: 'assets/reviews/deadpool pfp icon.jpg',
       review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+        'Breaking the fourth wall here, folks! I am Deadpool, and I am reviewing a web developer named Divyansh. I know, I know, it sounds weird, but hear me out. Divyansh is like my trusty sidekick, Weasel. Except instead of helping me with my merc work, he helps me with my website. And let me tell you, he is just as good at making me look good on the internet as Weasel is at making me look good in person. I mean, have you seen my website? It is like a work of art, folks! Divyansh is like a digital Picasso, minus the beret and the pretentiousness. So if you need a website that will make you look good, and maybe even make you laugh, then Divyansh is your guy! Just dont ask him to break the fourth wall, or he might just get stuck in the code like I do in my own head.'
     },
   ];
   
