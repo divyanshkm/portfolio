@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import WebDevModel from "../components/WebDevModel";
 import Globe from "react-globe.gl";
@@ -7,6 +7,7 @@ import Button from "../components/Button";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+  const globeEl = useRef();
   const handleCopy = () => {
     navigator.clipboard.writeText("devmahavarwork@gmail.com");
     setHasCopied(true);
@@ -14,6 +15,10 @@ const About = () => {
       setHasCopied(false);
     }, 2000);
   };
+
+  useEffect(() => {
+    globeEl.current.pointOfView({ lat: 21.17, lng: 72.83, altitude: 2 });
+  }, []);
   return (
     <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3  xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -61,6 +66,7 @@ const About = () => {
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit  flex justify-center items-center">
               <Globe
+                ref={globeEl}
                 height={326}
                 width={326}
                 backgroundColor="rgba(0, 0, 0, 0)"
@@ -77,11 +83,13 @@ const About = () => {
                 I&apos;m a remote worker based in India, and I work with clients
                 and teams from all over the world.
               </p>
-              <Button
-                name="Contact me"
-                isBeam
-                containerClass="w-full mt-10 "
-              ></Button>
+              <a href="#contact">
+                <Button
+                  name="Contact me"
+                  isBeam
+                  containerClass="w-full mt-10 "
+                ></Button>
+              </a>
             </div>
           </div>
         </div>
