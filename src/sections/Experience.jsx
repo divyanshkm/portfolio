@@ -18,7 +18,11 @@ const Experience = () => {
               <directionalLight position={[10, 10, 2]} intensity={1} />
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
               <Suspense fallback={<CanvasLoader />}>
-                <Goku position-y={-2.5} rotation-y={1} scale={2} />
+                <Goku
+                  position={[0, -2.7, -1]}
+                  rotation={[0.1, 0.5, 0]}
+                  scale={2}
+                />
               </Suspense>
             </Canvas>
           </div>
